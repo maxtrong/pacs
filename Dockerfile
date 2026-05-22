@@ -17,9 +17,9 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt /app/requirements.txt
 RUN pip3 install --no-cache-dir -r /app/requirements.txt
 
-# Copiar tu código original y tu imagen de Splash al servidor
+# Copiar tu código original y tu imagen de Splash al servidor sin errores de espacio
 COPY app.py /app/app.py
-COPY "maxtrong pacs.png" /app/maxtrong pacs.png
+COPY ["maxtrong pacs.png", "/app/maxtrong pacs.png"]
 
 # Crear el script de arranque automático de tu software
 RUN echo "#!/bin/sh" > /startapp.sh && \

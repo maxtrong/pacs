@@ -36,7 +36,7 @@ class EstacionRadiologica(ctk.CTk):
         self.splash.configure(fg_color="black")
 
         # Cargar Imagen Maxtrong
-        ruta_img = os.path.join(os.path.dirname(__file__), "maxtrong pacs.png")
+        ruta_img = os.path.join(os.path.dirname(__file__), "maxtrong_pacs.png")
         try:
             img_maxtrong = Image.open(ruta_img)
             # Ajustar tamaño (ejemplo 800x450 o similar)

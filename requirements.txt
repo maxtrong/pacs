@@ -1,6 +1,6 @@
-customtkinter
+streamlit
 pydicom
-opencv-python
+opencv-python-headless
 numpy
 Pillow
 python-docx
